@@ -1,0 +1,158 @@
+@import url(main-layout.css);
+@import url(blog-layout.css);
+@import url(theme.css);
+
+ 
+h1 {
+    font-size: 2.5em; 
+    text-align: center;
+    margin-bottom: 0.5em;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 2em; 
+    color: #555555;
+    text-align: left;
+    margin-bottom: 0.75em;
+    text-transform: none;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.75em; 
+    color: #777777;
+    text-align: left;
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+blockquote {
+    background-color: #f5f5f5;
+    border-left: 5px solid #ccc;
+    margin: 1.5em 10px; 
+    padding: 0.5em 20px; 
+    font-style: italic;
+    color: #333333; 
+    line-height: 1.6; 
+    font-size: 1.1em;
+}
+
+figure {
+    max-width: 400px;
+    margin: 20px auto; 
+    border: 1px solid #ddd; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center;  
+}
+
+figcaption {
+    color: #555;
+    font-style: italic; 
+    padding: 10px; 
+    font-size: 0.9em; 
+    border-top: 1px solid #ddd; 
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 240px 240px;
+}
+
+.card {
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: cornsilk;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card a {
+    margin-top: auto;
+}
+
+.card h2 {
+    margin: 0;
+}
+
+.card * {
+    border-style: none;
+}
+
+.summary {
+    font-style: italic;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    width: 25%;
+    border-style: outset;
+    margin-right: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+nav a {
+    color: gold;
+    text-decoration: none;
+    display: block;
+} 
+
+nav a:hover {
+    background-color: blue;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    header nav ul{
+        font-size: 2em;
+    }
+
+    .about-box figure img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 646px) {
+    header h1 {
+        font-size: 2em;
+    }
+    header nav ul{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 672px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    header nav ul {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 430px) {
+    header h1 {
+        font-size: 1em;
+    }
+    header nav ul {
+        font-size: .75em;
+    }
+}

@@ -1,0 +1,41 @@
+body {
+    margin: 0; 
+    height: 99vh;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+.about-box figure img {
+    width: 100%; /* Adjust the percentage as needed */
+    height: auto; /* This ensures the aspect ratio is maintained */
+    border-radius: 50%;
+}
+
+
+/* aside img {
+    height: 30%;
+    width: auto;
+	border-radius: 50%;
+} */
+
+main {
+    margin: 0;
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
